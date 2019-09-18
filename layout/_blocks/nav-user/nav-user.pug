@@ -1,0 +1,20 @@
+mixin nav-user()
+    nav(class="nav-user")&attributes(attributes)
+        div(class="nav-user__item")
+            div(class="nav-user__search")
+                img(class="nav-user__search-img" src="images/svg-icon/search.svg")
+                input(class="nav-user__search-field" type="text" placeholder="Поиск по сайту")
+        div(class="nav-user__item")
+            div(class="nav-user__subitem")
+                div(class="nav-user__link-block")
+                    img(class="nav-user__image-user" src="images/svg-icon/user.svg")
+                    a(class="text nav-user__link" href="#5") Войти
+            div(class="nav-user__subitem nav-user__subitem--right")
+                div(class="nav-user__link-block")
+                    img(class="nav-user__image-compare" src="images/svg-icon/compare.svg")
+                    a(class="text nav-user__link" href="#5") Сравнить
+                div(class="nav-user__link-block")
+                    img(class="nav-user__image-cart" src="images/svg-icon/cart.svg")
+                    a(class="text nav-user__link" href="#5") Корзина
+
+    // END .nav-user

@@ -1,0 +1,10 @@
+.logo {
+    &__link {
+        font-family: "Gilroy", "Arial", sans-serif;
+        font-size: 48px;
+        letter-spacing: 0.26px;
+        color: var(--black);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

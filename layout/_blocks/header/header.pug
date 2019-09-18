@@ -1,0 +1,14 @@
+mixin header()
+    header(class="header")
+        div(class="box header__box")
+
+            include ../../_blocks/logo/logo.pug
+            +logo()(class="header__logo")
+        
+            include ../../_blocks/nav-user/nav-user.pug
+            +nav-user()(class="header__nav-user")
+
+            include ../../_blocks/nav-site/nav-site.pug
+            +nav-site()
+
+    // END .header

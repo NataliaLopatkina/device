@@ -1,0 +1,23 @@
+@import "../normalize/normalize.css";
+@import "../reset/reset.css";
+
+/* Fonts */
+
+@import "../fonts/fonts.css";
+
+/* Styles */
+
+@import "../box/box.css";
+@import "../vars-color/vars-color.css";
+@import "../vars-media/vars-media.css";
+@import "../visually-hidden/visually-hidden.css";
+@import "../text/text.css";
+@import "../header/header.css";
+
+.page {
+    font-family: "Open-Sans", "Arial", sans-serif;
+
+    &__container {
+        overflow-x: hidden;
+    }
+}

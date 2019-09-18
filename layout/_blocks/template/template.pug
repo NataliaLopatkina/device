@@ -1,0 +1,21 @@
+block data
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Device
+        link(rel="stylesheet" href="stylesheets/" + data.styles + '.css')
+
+    body(class="page")
+        div(class="page__container")
+            include ../../_blocks/header/header.pug
+            +header()
+
+            main(class="main")
+
+                block content
+
+        script(src="scripts/common.js")
+
+

@@ -1,0 +1,9 @@
+.text {
+    font-size: 15px;
+    line-height: calc(36 / 15);
+    color: var(--black);
+
+    &--less-height {
+        line-height: calc(30 / 15);
+    }
+}

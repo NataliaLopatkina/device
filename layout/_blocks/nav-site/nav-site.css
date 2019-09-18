@@ -1,0 +1,50 @@
+@import "../submenu/submenu.css";
+
+.nav-site {
+    display: flex;
+    position: relative;
+
+    &__item {
+        display: flex;
+        width: calc(100% / 2);
+    }
+
+    &__subitem {
+        display: flex;
+        width: calc(100% / 2);
+    }
+
+    &__subitem--right {
+        text-align: right;
+    }
+
+    &__button {
+        border: none;
+        background: none;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__link {
+        font-family: "Gilroy", "Arial", sans-serif;
+        font-size: 18px;
+        letter-spacing: 2.8px;
+        color: var(--black);
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        margin-right: 38px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link--catalog {
+        width: auto;
+        margin-right: 16px;
+    }
+}

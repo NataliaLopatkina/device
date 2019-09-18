@@ -1,0 +1,18 @@
+mixin nav-site()
+    nav(class="nav-site")
+        div(class="nav-site__item")
+            a(href="#5" class="nav-site__link nav-site__link--catalog") Каталог товаров
+            button(class="nav-site__button")
+                img(class="nav-site__img" src="images/svg-icon/plus.svg")
+
+            include ../../_blocks/submenu/submenu.pug
+            +submenu()
+
+        div(class="nav-site__item")
+            div(class="nav-site__subitem")
+                a(href="#5" class="nav-site__link") Доставка
+                a(href="#5" class="nav-site__link") Гарантия
+            div(class="nav-site__subitem nav-site__subitem--right")
+                a(href="#5" class="nav-site__link") Контакты
+
+    // END .nav-site

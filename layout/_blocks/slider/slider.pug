@@ -1,0 +1,47 @@
+mixin slider(obj)
+    div(class="slider")
+        div(class="box slider__box")
+            include ../../_blocks/slide/slide.pug
+            -
+                var slides = [
+                    {
+                        number: "01",
+                        image: "slide-1",
+                        title: "Делай селфи, как Бен Стиллер!",
+                        text: "Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.",
+                        slide1: true,
+                        parameter1: "8,5 м",
+                        parameter2: "5 кг",
+                        parameter3: "Карбон",
+                        title1: "Длина палки",
+                        title2: "Вес палки",
+                        title3: "Материал",
+                    },
+
+                    {
+                        number: "02",
+                        image: "slide-2",
+                        title: "Худеем правильно!",
+                        text: "Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.",
+                        slide1: true,
+                        parameter1: "48 часов",
+                        title1: "Без подзарядки",
+                    },
+
+                    {
+                        number: "03",
+                        image: "slide-3",
+                        title: "Порхает как бабочка, жалит как пчела!",
+                        text: "Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.",
+                        slide3: true,
+                        parameter1: "800 м",
+                        parameter2: "50 м",
+                        title1: "Дальность полета",
+                        title2: "Радиус поражения",
+                    }
+                ]
+
+            each obj in slides
+                +slide(obj)
+
+    // END .slider

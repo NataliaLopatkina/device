@@ -1,0 +1,36 @@
+@import "../logo/logo.css";
+@import "../nav-user/nav-user.css";
+@import "../nav-site/nav-site.css";
+
+.header {
+    padding-top: 21px;
+    padding-bottom: 135px;
+
+    &__box {
+        position: relative;
+        max-width: 1160px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &:after {
+            content: "";
+            max-width: 1160px;
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 28px;
+            left: 0;
+            z-index: -1;
+            display: block;
+            background: var(--background-color);
+        }
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+
+    &__nav-user {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,28 @@
+mixin slide(obj)
+    div(class="slide")
+        span(class="slide__line")
+        h1(class="slide__number") !{obj.number}
+        div(class="image-box slide__image-box")
+            img(class="images-box__img",
+                src="images/slider/" + obj.image + ".png",
+                srcset="images/slider/" + obj.image + "@2x" + ".png" + " 2x",
+                alt="Slider")
+        div(class="slide__description")
+            p(class="slide__title") !{obj.title}
+            p(class="slide__text") !{obj.text}
+            button(class="button slide__button") Подробнее
+            table(class="slide__table")
+                tr(class="slide__table-row")
+                    td(class="slide__table-cell") !{obj.parameter1}
+                    if (obj.slide1 || obj.slide3)
+                        td(class="slide__table-cell") !{obj.parameter2}
+                    if (obj.slide1)
+                        td(class="slide__table-cell") !{obj.parameter3}
+                tr(class="slide__table-rowl")
+                    td(class="slide__table-cell") !{obj.title1}
+                    if (obj.slide1 || obj.slide3)
+                        td(class="slide__table-cell") !{obj.title2}
+                    if (obj.slide1)
+                        td(class="slide__table-cell") !{obj.title3}
+
+    // END .slide
